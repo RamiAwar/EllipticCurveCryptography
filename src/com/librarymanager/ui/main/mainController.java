@@ -1,17 +1,22 @@
 package com.librarymanager.ui.main;
 
 import com.jfoenix.controls.JFXButton;
+import com.librarymanager.ui.draggable.EffectUtilities;
+import com.librarymanager.ui.icons;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import de.jensd.fx.fontawesome.Icon;
 import de.jensd.fx.glyphs.GlyphIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -21,12 +26,6 @@ import java.util.ResourceBundle;
  * Created by ramiawar on 3/23/17.
  */
 public class mainController implements Initializable{
-
-    FontAwesomeIconView ADD_USER;
-    FontAwesomeIconView LIST_USERS;
-    FontAwesomeIconView ADD_BOOK;
-    FontAwesomeIconView LIST_BOOKS;
-    FontAwesomeIconView SETTINGS;
 
     @FXML
     JFXButton addMemberButton;
@@ -44,7 +43,21 @@ public class mainController implements Initializable{
     JFXButton settingsButton;
 
     @FXML
+    MenuBar menuBar;
+
+    @FXML
     MenuItem closeMenuItem;
+
+
+    private double xOffset;
+    private double yOffset;
+    private Stage stage;
+
+    //Receiving stage from main class to make window draggable
+    void registerStage(Stage stage){
+        this.stage = stage;
+        EffectUtilities.makeDraggable(stage, menuBar);
+    }
 
     @FXML
     void close(ActionEvent event) {
@@ -62,22 +75,14 @@ public class mainController implements Initializable{
 
     public void loadIcons(){
 
-        ADD_USER = new FontAwesomeIconView(FontAwesomeIcon.USER_PLUS);
-        ADD_USER.setSize("2em");
-        LIST_USERS = new FontAwesomeIconView(FontAwesomeIcon.USERS);
-        LIST_USERS.setSize("2em");
-        ADD_BOOK = new FontAwesomeIconView(FontAwesomeIcon.LEANPUB);
-        ADD_BOOK.setSize("2em");
-        LIST_BOOKS = new FontAwesomeIconView(FontAwesomeIcon.LIST);
-        LIST_BOOKS.setSize("2em");
-        SETTINGS = new FontAwesomeIconView(FontAwesomeIcon.COG);
-        SETTINGS.setSize("2em");
-
-        addMemberButton.setGraphic(ADD_USER);
-        addBookButton.setGraphic(ADD_BOOK);
-        listMembersButton.setGraphic(LIST_BOOKS);
-        listBooksButton.setGraphic(LIST_USERS);
-        settingsButton.setGraphic(SETTINGS);
+        icons.setSize("4em");
+        addMemberButton.setGraphic(icons.ADD_USER);
+        addBookButton.setGraphic(icons.ADD_BOOK);
+        listMembersButton.setGraphic(icons.LIST_BOOKS);
+        listBooksButton.setGraphic(icons.LIST_USERS);
+        settingsButton.setGraphic(icons.SETTINGS);
 
     }
+
+
 }

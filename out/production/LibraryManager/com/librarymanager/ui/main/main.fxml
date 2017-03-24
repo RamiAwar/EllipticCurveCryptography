@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
-<?import javafx.scene.*?>
 <?import com.jfoenix.controls.*?>
-<?import de.jensd.fx.glyphs.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="729.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.librarymanager.ui.main.mainController">
@@ -15,7 +13,7 @@
       <Pane prefHeight="515.0" prefWidth="729.0" style="-fx-background-color: rgba(255,255,255,0);" />
       <BorderPane prefHeight="504.0" prefWidth="706.0" style="-fx-background-color: #fff;">
          <top>
-            <MenuBar BorderPane.alignment="CENTER">
+            <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
@@ -57,12 +55,76 @@
               <tabs>
                 <Tab text="Issue Book">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="446.0" prefWidth="589.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="240.0" prefWidth="589.0">
+                                       <children>
+                                          <JFXTextField alignment="CENTER" labelFloat="true" promptText="Book ID" />
+                                          <VBox alignment="CENTER" prefHeight="99.0" prefWidth="340.0">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book" textAlignment="CENTER" wrappingWidth="346.21875" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="CENTER" wrappingWidth="346.21875" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="240.0" prefWidth="589.0">
+                                       <children>
+                                          <JFXTextField alignment="CENTER" labelFloat="true" promptText="Member ID" />
+                                          <VBox alignment="CENTER" prefHeight="99.0" prefWidth="340.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="346.21875" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER" wrappingWidth="346.21875" />
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <AnchorPane prefHeight="143.0" prefWidth="589.0">
+                                       <children>
+                                          <JFXButton layoutX="276.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" style="-fx-background-color: #eee;" text="Issue" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                          <JFXButton layoutX="431.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" style="-fx-background-color: #eee;" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
                   </content>
                 </Tab>
-                <Tab text="Return Book">
+                <Tab text="Renew/Return Book">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="195.0" layoutY="107.0" prefHeight="446.0" prefWidth="589.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXTextField labelFloat="true" prefHeight="35.0" prefWidth="389.0" promptText="Book ID" VBox.vgrow="NEVER">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" left="100.0" right="100.0" top="30.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <ListView prefHeight="319.0" prefWidth="589.0" />
+                                          <AnchorPane prefHeight="118.0" prefWidth="589.0">
+                                             <children>
+                                                <JFXButton layoutX="276.0" layoutY="20.0" prefHeight="45.0" prefWidth="118.0" style="-fx-background-color: #eee;" text="Renew" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                                <JFXButton layoutX="427.0" layoutY="20.0" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: #eee;" text="Return" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
                   </content>
                 </Tab>
               </tabs>

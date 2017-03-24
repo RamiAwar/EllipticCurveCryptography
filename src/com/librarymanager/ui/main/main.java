@@ -19,14 +19,27 @@ public class main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-        Scene scene = new Scene(root);
+
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
+
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource(
+                        "main.fxml"
+                )
+        );
+
+        Scene scene = new Scene(loader.load());
         scene.setFill(Color.TRANSPARENT);
 
-//        primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
+
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        //Passing primaryStage to controller in order to make window draggable
+        mainController controller =
+                loader.<mainController>getController();
+        controller.registerStage(primaryStage);
 
         primaryStage.setOnCloseRequest(e -> Platform.exit());
     }

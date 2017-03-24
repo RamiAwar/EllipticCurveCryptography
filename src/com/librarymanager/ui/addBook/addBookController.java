@@ -2,7 +2,7 @@ package com.librarymanager.ui.addBook;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
-import com.librarymanager.Validation.Validator;
+import com.librarymanager.validation.Validator;
 import com.librarymanager.database.DatabaseHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

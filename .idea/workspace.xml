@@ -22,9 +22,11 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="310">
+              <caret line="38" column="78" lean-forward="false" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
+              <folding>
+                <element signature="e#1084#1100#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,10 +34,36 @@
       <file leaf-file-name="mainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/mainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+            <state relative-caret-position="250">
+              <caret line="77" column="24" lean-forward="false" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icons.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/icons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EffectUtilities.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/draggable/EffectUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,28 +72,9 @@
       <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/main.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding>
-                <marker date="1490351721000" expanded="true" signature="629:4010" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="643:3951" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="838:3936" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="853:1648" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="905:1632" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="927:1609" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="986:1173" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1012:1149" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1232:1380" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1258:1356" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1439:1586" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1465:1562" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1665:2901" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1751:2883" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="1777:2748" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="2773:2863" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="2919:2945" ph="..." />
-                <marker date="1490351721000" expanded="true" signature="3963:3997" ph="..." />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -107,8 +116,10 @@
         <option value="$PROJECT_DIR$/src/com/librarymanager/ui/listMember/listMemberController.java" />
         <option value="$PROJECT_DIR$/src/com/librarymanager/Validation/Validator.java" />
         <option value="$PROJECT_DIR$/src/com/librarymanager/ui/main/main.fxml" />
-        <option value="$PROJECT_DIR$/src/com/librarymanager/ui/main/mainController.java" />
         <option value="$PROJECT_DIR$/src/com/librarymanager/ui/main/main.java" />
+        <option value="$PROJECT_DIR$/src/com/librarymanager/ui/draggable/EffectUtilities.java" />
+        <option value="$PROJECT_DIR$/src/com/librarymanager/ui/icons.java" />
+        <option value="$PROJECT_DIR$/src/com/librarymanager/ui/main/mainController.java" />
       </list>
     </option>
   </component>
@@ -161,7 +172,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Validation" />
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LibraryManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LibraryManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="librarymanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,6 +269,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="draggable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,7 +749,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -767,7 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/librarymanager/Validation/Validator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/librarymanager/validation/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -944,7 +981,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/librarymanager/Validation/Validator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/librarymanager/validation/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="143" column="76" lean-forward="true" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="76" />
@@ -966,30 +1003,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="2600" column="0" lean-forward="false" selection-start-line="2600" selection-start-column="0" selection-end-line="2600" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <marker date="1490351721000" expanded="true" signature="629:4010" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="643:3951" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="838:3936" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="853:1648" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="905:1632" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="927:1609" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="986:1173" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1012:1149" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1232:1380" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1258:1356" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1439:1586" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1465:1562" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1665:2901" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1751:2883" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="1777:2748" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="2773:2863" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="2919:2945" ph="..." />
-            <marker date="1490351721000" expanded="true" signature="3963:3997" ph="..." />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -998,16 +1024,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="310">
+          <caret line="38" column="78" lean-forward="false" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
+          <folding>
+            <element signature="e#1084#1100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/draggable/EffectUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/icons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/mainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        <state relative-caret-position="250">
+          <caret line="77" column="24" lean-forward="false" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
