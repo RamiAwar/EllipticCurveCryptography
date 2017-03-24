@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="729.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.librarymanager.ui.main.mainController">
+   <children>
+      <Pane prefHeight="515.0" prefWidth="729.0" style="-fx-background-color: rgba(255,255,255,0);" />
+      <BorderPane prefHeight="504.0" prefWidth="706.0" style="-fx-background-color: #fff;">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <VBox prefHeight="475.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="addMemberButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Member" />
+                  <JFXButton fx:id="addBookButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Book" />
+                  <JFXButton fx:id="listMembersButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Members" />
+                  <JFXButton fx:id="listBooksButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Book Library" />
+                  <JFXButton fx:id="settingsButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Settings" />
+               </children>
+               <padding>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </padding>
+            </VBox>
+         </right>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0000001f" offsetX="5.0" offsetY="5.0" spread="0.1" />
+         </effect>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Issue Book">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab text="Return Book">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+         <StackPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </StackPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </BorderPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</StackPane>
