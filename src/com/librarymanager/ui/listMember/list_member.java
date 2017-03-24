@@ -3,6 +3,7 @@ package com.librarymanager.ui.listMember;
  * Created by ramiawar on 3/21/17.
  */
 
+import com.librarymanager.ui.main.main;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +18,8 @@ public class list_member extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("list_member.fxml"));
+        FXMLLoader loader = main.getLoader();
+        Parent root = loader.load(getClass().getResource("list_member.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();

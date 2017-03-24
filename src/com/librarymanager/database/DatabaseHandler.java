@@ -16,7 +16,16 @@ public class DatabaseHandler {
     private String username = "newuser";
     private String password = "password";
 
-    public DatabaseHandler(){
+    //This gives access to all classes to this database handler
+    public static DatabaseHandler getInstance(){
+        if(handler == null){
+            handler = new DatabaseHandler();
+        }
+        return handler;
+    }
+
+    //Setting the constructor as private prevents other classes from creating their own database handlers.
+    private DatabaseHandler(){
         createConnection();
     }
 

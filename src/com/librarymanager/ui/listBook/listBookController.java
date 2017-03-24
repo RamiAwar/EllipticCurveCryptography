@@ -48,6 +48,7 @@ public class listBookController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         initColumns();
 
         loadData();
@@ -62,7 +63,7 @@ public class listBookController implements Initializable{
     }
 
     private void loadData(){
-        DatabaseHandler handler = new DatabaseHandler();
+        DatabaseHandler handler = DatabaseHandler.getInstance();
         String query = "SELECT * FROM books";
         ResultSet resultSet = handler.executeQuery(query);
         try {

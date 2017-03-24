@@ -2,6 +2,7 @@ package com.librarymanager.ui.listBook;/**
  * Created by ramiawar on 3/20/17.
  */
 
+import com.librarymanager.ui.main.main;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,7 +17,7 @@ public class list_book extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("list_book.fxml"));
+        Parent root = main.getLoader().load(getClass().getResource("list_book.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -47,7 +47,7 @@ public class addBookController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        databaseHandler = new DatabaseHandler();
+        databaseHandler = DatabaseHandler.getInstance();
 
         setupValidators();
 

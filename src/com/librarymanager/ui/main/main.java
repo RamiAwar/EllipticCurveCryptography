@@ -2,6 +2,7 @@ package com.librarymanager.ui.main;/**
  * Created by ramiawar on 3/23/17.
  */
 
+import com.librarymanager.database.DatabaseHandler;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -17,13 +18,19 @@ public class main extends Application {
         launch(args);
     }
 
+    private static FXMLLoader loader;
+
+    public static FXMLLoader getLoader(){
+        return loader;
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception{
 
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
 
-        FXMLLoader loader = new FXMLLoader(
+        loader = new FXMLLoader(
                 getClass().getResource(
                         "main.fxml"
                 )
@@ -35,6 +42,8 @@ public class main extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        DatabaseHandler.getInstance();
 
         //Passing primaryStage to controller in order to make window draggable
         mainController controller =

@@ -36,10 +36,10 @@
          <right>
             <VBox prefHeight="475.0" prefWidth="120.0" BorderPane.alignment="CENTER">
                <children>
-                  <JFXButton fx:id="addMemberButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Member" />
-                  <JFXButton fx:id="addBookButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Book" />
-                  <JFXButton fx:id="listMembersButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Members" />
-                  <JFXButton fx:id="listBooksButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Book Library" />
+                  <JFXButton fx:id="addMemberButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadAddMember" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Member" />
+                  <JFXButton fx:id="addBookButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadAddBook" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Book" />
+                  <JFXButton fx:id="listMembersButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadMembersList" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Members" />
+                  <JFXButton fx:id="listBooksButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadBooksList" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Book Library" />
                   <JFXButton fx:id="settingsButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Settings" />
                </children>
                <padding>
@@ -89,8 +89,8 @@
                                     </HBox>
                                     <AnchorPane prefHeight="143.0" prefWidth="589.0">
                                        <children>
-                                          <JFXButton layoutX="276.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" style="-fx-background-color: #eee;" text="Issue" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                                          <JFXButton layoutX="431.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" style="-fx-background-color: #eee;" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                          <JFXButton layoutX="276.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" styleClass="action-button" stylesheets="@main.css" text="Issue" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                          <JFXButton layoutX="431.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" styleClass="action-button" stylesheets="@main.css" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
                                        </children>
                                     </AnchorPane>
                                  </children>
@@ -107,16 +107,16 @@
                                  <center>
                                     <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                                        <children>
-                                          <JFXTextField labelFloat="true" prefHeight="35.0" prefWidth="389.0" promptText="Book ID" VBox.vgrow="NEVER">
+                                          <JFXTextField labelFloat="true" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Book ID" VBox.vgrow="NEVER">
                                              <VBox.margin>
-                                                <Insets bottom="20.0" left="100.0" right="100.0" top="30.0" />
+                                                <Insets bottom="20.0" left="200.0" right="200.0" top="30.0" />
                                              </VBox.margin>
                                           </JFXTextField>
                                           <ListView prefHeight="319.0" prefWidth="589.0" />
                                           <AnchorPane prefHeight="118.0" prefWidth="589.0">
                                              <children>
-                                                <JFXButton layoutX="276.0" layoutY="20.0" prefHeight="45.0" prefWidth="118.0" style="-fx-background-color: #eee;" text="Renew" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                                                <JFXButton layoutX="427.0" layoutY="20.0" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: #eee;" text="Return" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                                <JFXButton layoutX="276.0" layoutY="20.0" prefHeight="45.0" prefWidth="118.0" styleClass="action-button" stylesheets="@main.css" text="Renew" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                                <JFXButton layoutX="427.0" layoutY="20.0" prefHeight="45.0" prefWidth="116.0" styleClass="action-button" stylesheets="@main.css" text="Return" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
                                              </children>
                                           </AnchorPane>
                                        </children>
