@@ -1,4 +1,4 @@
-package com.librarymanager.ui;
+package com.librarymanager.ui.icons;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;

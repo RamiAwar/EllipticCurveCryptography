@@ -2,21 +2,12 @@ package com.librarymanager.ui.main;
 
 import com.jfoenix.controls.JFXButton;
 import com.librarymanager.ui.draggable.EffectUtilities;
-import com.librarymanager.ui.icons;
-import de.jensd.fx.fontawesome.AwesomeIcon;
-import de.jensd.fx.fontawesome.Icon;
-import de.jensd.fx.glyphs.GlyphIcon;
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
+import com.librarymanager.ui.icons.icons;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -75,6 +66,7 @@ public class mainController implements Initializable{
 
     public void loadIcons(){
 
+        //Setting icons on buttons using **ui.icons.icons** class
         icons.setSize("4em");
         addMemberButton.setGraphic(icons.ADD_USER);
         addBookButton.setGraphic(icons.ADD_BOOK);
