@@ -23,11 +23,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
-              <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+              <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
               <folding>
                 <element signature="e#579#580#0" expanded="true" />
                 <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#1276#1292#0" expanded="true" />
+                <element signature="e#1346#1362#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1008,11 +1008,11 @@
     <entry file="file://$PROJECT_DIR$/src/com/librarymanager/ui/main/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
-          <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
           <folding>
             <element signature="e#579#580#0" expanded="true" />
             <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#1276#1292#0" expanded="true" />
+            <element signature="e#1346#1362#0" expanded="true" />
           </folding>
         </state>
       </provider>

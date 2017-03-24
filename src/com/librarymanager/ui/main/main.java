@@ -43,6 +43,7 @@ public class main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
+        //Instantiate database handler instance to lower loading time
         DatabaseHandler.getInstance();
 
         //Passing primaryStage to controller in order to make window draggable
