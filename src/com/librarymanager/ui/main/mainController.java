@@ -39,6 +39,18 @@ public class mainController implements Initializable{
     JFXButton settingsButton;
 
     @FXML
+    JFXButton issueButton;
+
+    @FXML
+    JFXButton renewButton;
+
+    @FXML
+    JFXButton returnButton;
+
+    @FXML
+    JFXButton cancelButton;
+
+    @FXML
     MenuBar menuBar;
 
     @FXML
@@ -81,6 +93,14 @@ public class mainController implements Initializable{
     void loadBooksList(ActionEvent event) {
         loadWindow("/com/librarymanager/ui/listBook/list_book.fxml", "Books");
     }
+    @FXML
+    void loadBookInfo(ActionEvent event) {
+    }
+    @FXML
+    void loadMemberInfo(ActionEvent event) {
+    }
+
+
 
     void loadWindow(String location, String title){
         try {
@@ -89,6 +109,7 @@ public class mainController implements Initializable{
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle(title);
             stage.setScene(new Scene(parent));
+            stage.setAlwaysOnTop(true);
             stage.show();
 
         } catch (IOException e) {
@@ -106,12 +127,16 @@ public class mainController implements Initializable{
     public void loadIcons(){
 
         //Setting icons on buttons using **ui.icons.icons** class
-        icons.setSize("4em");
+        icons.setSize("2em");
         addMemberButton.setGraphic(icons.ADD_USER);
         addBookButton.setGraphic(icons.ADD_BOOK);
         listMembersButton.setGraphic(icons.LIST_BOOKS);
         listBooksButton.setGraphic(icons.LIST_USERS);
         settingsButton.setGraphic(icons.SETTINGS);
+        renewButton.setGraphic(icons.RENEW);
+        returnButton.setGraphic(icons.RETURN);
+        issueButton.setGraphic(icons.ISSUE);
+        cancelButton.setGraphic(icons.CANCEL);
 
     }
 

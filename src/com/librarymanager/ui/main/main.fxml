@@ -8,10 +8,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="729.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.librarymanager.ui.main.mainController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="826.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.librarymanager.ui.main.mainController">
    <children>
-      <Pane prefHeight="515.0" prefWidth="729.0" style="-fx-background-color: rgba(255,255,255,0);" />
-      <BorderPane prefHeight="504.0" prefWidth="706.0" style="-fx-background-color: #fff;">
+      <Pane prefHeight="650.0" prefWidth="826.0" style="-fx-background-color: rgba(255,255,255,0);" />
+      <BorderPane prefHeight="549.0" prefWidth="769.0" style="-fx-background-color: #fff;">
          <top>
             <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
               <menus>
@@ -39,7 +39,7 @@
                   <JFXButton fx:id="addMemberButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadAddMember" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Member" />
                   <JFXButton fx:id="addBookButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadAddBook" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Add Book" />
                   <JFXButton fx:id="listMembersButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadMembersList" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Members" />
-                  <JFXButton fx:id="listBooksButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadBooksList" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Book Library" />
+                  <JFXButton fx:id="listBooksButton" contentDisplay="TOP" graphicTextGap="10.0" onAction="#loadBooksList" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Books" />
                   <JFXButton fx:id="settingsButton" contentDisplay="TOP" graphicTextGap="10.0" prefHeight="250.0" prefWidth="131.0" style="-fx-background-color: #eee;" text="Settings" />
                </children>
                <padding>
@@ -48,7 +48,7 @@
             </VBox>
          </right>
          <effect>
-            <DropShadow blurType="GAUSSIAN" color="#0000001f" offsetX="5.0" offsetY="5.0" spread="0.1" />
+            <DropShadow blurType="GAUSSIAN" color="#0000001f" height="39.46" offsetX="10.0" offsetY="10.0" radius="19.2325" spread="0.24" width="39.47" />
          </effect>
          <center>
             <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
@@ -59,38 +59,62 @@
                            <children>
                               <VBox prefHeight="446.0" prefWidth="589.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <HBox alignment="CENTER" prefHeight="240.0" prefWidth="589.0">
+                                    <HBox alignment="CENTER" prefHeight="240.0" prefWidth="589.0" style="-fx-background-color: #eeeeef;">
                                        <children>
-                                          <JFXTextField alignment="CENTER" labelFloat="true" promptText="Book ID" />
-                                          <VBox alignment="CENTER" prefHeight="99.0" prefWidth="340.0">
+                                          <JFXTextField fx:id="book_id" alignment="CENTER" labelFloat="true" onAction="#loadBookInfo" onKeyTyped="#loadBookInfo" prefHeight="25.0" prefWidth="251.0" promptText="Book ID" />
+                                          <VBox alignment="CENTER" fillWidth="false" maxWidth="-Infinity" prefHeight="76.0" prefWidth="272.0" HBox.hgrow="NEVER">
                                              <HBox.margin>
-                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
                                              </HBox.margin>
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book" textAlignment="CENTER" wrappingWidth="346.21875" />
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="CENTER" wrappingWidth="346.21875" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book" textAlignment="CENTER" wrappingWidth="300.7717590332031" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="CENTER" wrappingWidth="274.53759765625" />
                                              </children>
                                           </VBox>
                                        </children>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </VBox.margin>
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" color="#0000003f" offsetX="5.0" offsetY="5.0" radius="10.002500000000001" width="21.01" />
+                                       </effect>
+                                       <padding>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </padding>
                                     </HBox>
-                                    <HBox alignment="CENTER" prefHeight="240.0" prefWidth="589.0">
+                                    <HBox alignment="CENTER" prefHeight="240.0" prefWidth="589.0" style="-fx-background-color: #eeeeef;">
                                        <children>
-                                          <JFXTextField alignment="CENTER" labelFloat="true" promptText="Member ID" />
+                                          <JFXTextField alignment="CENTER" labelFloat="true" onAction="#loadMemberInfo" onKeyTyped="#loadMemberInfo" promptText="Member ID" />
                                           <VBox alignment="CENTER" prefHeight="99.0" prefWidth="340.0">
                                              <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="346.21875" />
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER" wrappingWidth="346.21875" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="298.81666564941406" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER" wrappingWidth="300.771728515625" />
                                              </children>
                                              <HBox.margin>
-                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
                                              </HBox.margin>
                                           </VBox>
                                        </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                                       </VBox.margin>
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" color="#00000048" offsetX="5.0" offsetY="5.0" />
+                                       </effect>
+                                       <padding>
+                                          <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                       </padding>
                                     </HBox>
                                     <AnchorPane prefHeight="143.0" prefWidth="589.0">
                                        <children>
-                                          <JFXButton layoutX="276.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" styleClass="action-button" stylesheets="@main.css" text="Issue" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                                          <JFXButton layoutX="431.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" styleClass="action-button" stylesheets="@main.css" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                          <JFXButton fx:id="issueButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="276.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" styleClass="action-button" stylesheets="@main.css" text="Issue" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                             </padding></JFXButton>
+                                          <JFXButton fx:id="cancelButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="431.0" layoutY="22.0" prefHeight="52.0" prefWidth="120.0" styleClass="action-button" stylesheets="@main.css" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                             </padding></JFXButton>
                                        </children>
                                     </AnchorPane>
                                  </children>
@@ -115,8 +139,14 @@
                                           <ListView prefHeight="319.0" prefWidth="589.0" />
                                           <AnchorPane prefHeight="118.0" prefWidth="589.0">
                                              <children>
-                                                <JFXButton layoutX="276.0" layoutY="20.0" prefHeight="45.0" prefWidth="118.0" styleClass="action-button" stylesheets="@main.css" text="Renew" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                                                <JFXButton layoutX="427.0" layoutY="20.0" prefHeight="45.0" prefWidth="116.0" styleClass="action-button" stylesheets="@main.css" text="Return" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                                <JFXButton fx:id="renewButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="276.0" layoutY="20.0" prefHeight="45.0" prefWidth="118.0" styleClass="action-button" stylesheets="@main.css" text="Renew" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                                   <padding>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </padding></JFXButton>
+                                                <JFXButton fx:id="returnButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="427.0" layoutY="20.0" prefHeight="45.0" prefWidth="116.0" styleClass="action-button" stylesheets="@main.css" text="Return" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                                   <padding>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </padding></JFXButton>
                                              </children>
                                           </AnchorPane>
                                        </children>
@@ -131,7 +161,7 @@
             </TabPane>
          </center>
          <StackPane.margin>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
          </StackPane.margin>
          <opaqueInsets>
             <Insets />
@@ -139,6 +169,6 @@
       </BorderPane>
    </children>
    <effect>
-      <DropShadow />
+      <DropShadow blurType="GAUSSIAN" />
    </effect>
 </StackPane>
