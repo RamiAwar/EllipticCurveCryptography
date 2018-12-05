@@ -1,6 +1,5 @@
 package com.ecc.ui.main;
 
-import com.ecc.ecc.EccWrapper;
 import com.ecc.ui.draggable.EffectUtilities;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,7 +7,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -51,7 +49,7 @@ public class mainController implements Initializable{
     @FXML
     void encrypt(ActionEvent e){
 
-        EccWrapper.generate();
+       // EccWrapper.generate();
 
     }
 
