@@ -19,12 +19,15 @@ JNIEXPORT jstring JNICALL Java_EccWrapper_generateKeyPair(JNIEnv * env, jobject)
 	Point pubKey = keyGen->GetPublicKey();
 	cpp_int privKey = keyGen->GetPrivateKey();
 
-	std::string privateKey = std::to_string(privKey);
-	std::string publicKey = "(" + std::to_string(pubKey.x) + "," + std::to_string(pubKey.y) + ")";
 
-    char greeting[] = "Hello, ";
-    char output[] = privateKey + "_" + publicKey;
+	std::string privateKey = boost::lexical_cast<std::string>(privKey);
+    std::string publicKey = "(" + boost::lexical_cast<std::string>(pubKey.x) + "," + boost::lexical_cast<std::string>(pubKey.y) + ")";
+    std::string result = privateKey + "_" + publicKey;
 
-    jstr = (*env)->NewStringUTF(env, output);
+    char output[2080];
+    strcpy(output, result.c_str());
+
+    jstr = (*env).NewStringUTF(output);
 	return jstr;
+
 }

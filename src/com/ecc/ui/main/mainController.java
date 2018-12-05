@@ -61,32 +61,36 @@ public class mainController implements Initializable{
     @FXML
     void generate_keys(ActionEvent event) {
 
+        
+
         // Delete files if exist
-        File file = new File("private.key");
-        try {
-            boolean result = Files.deleteIfExists(file.toPath()); //surround it in try catch block
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        File file = new File("private.key");
+//        try {
+//            boolean result = Files.deleteIfExists(file.toPath()); //surround it in try catch block
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        // Create key files
+//        try {
+//
+//            String private_key = "Hello";
+//            String public_key = "";
+//
+//            BufferedWriter private_writer = new BufferedWriter(new FileWriter("private.key"));
+//            BufferedWriter public_writer = new BufferedWriter(new FileWriter("public.key"));
+//
+//            private_writer.write(private_key);
+//            private_writer.close();
+//
+//            public_writer.write(public_key);
+//            public_writer.close();
+//
+//        }catch(IOException e){
+//
+//        }
 
-        // Create key files
-        try {
-
-            String private_key = "Hello";
-            String public_key = "";
-
-            BufferedWriter private_writer = new BufferedWriter(new FileWriter("private.key"));
-            BufferedWriter public_writer = new BufferedWriter(new FileWriter("public.key"));
-
-            private_writer.write(private_key);
-            private_writer.close();
-
-            public_writer.write(public_key);
-            public_writer.close();
-
-        }catch(IOException e){}
-
-        }
+    }
 
 
         @Override
