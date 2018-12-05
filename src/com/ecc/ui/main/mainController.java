@@ -1,11 +1,14 @@
 package com.ecc.ui.main;
 
+import com.ecc.ecc.EccWrapper;
 import com.ecc.ui.draggable.EffectUtilities;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.BufferedWriter;
@@ -27,9 +30,14 @@ public class mainController implements Initializable{
     @FXML
     MenuItem closeMenuItem;
 
+    @FXML
+    TextArea private_key_field;
 
-    private double xOffset;
-    private double yOffset;
+    @FXML
+    TextArea public_key_field;
+
+
+
     private Stage stage;
 
     //Receiving stage from main class to make window draggable
@@ -47,21 +55,19 @@ public class mainController implements Initializable{
     }
 
     @FXML
-    void encrypt(ActionEvent e){
-
-       // EccWrapper.generate();
-
-    }
-
-    @FXML
-    void decrypt(ActionEvent e){
-
-    }
-
-    @FXML
     void generate_keys(ActionEvent event) {
 
-        
+        // Call C++ modules
+        String x = EccWrapper.generate();
+        System.out.println(x);
+
+        int index = x.lastIndexOf("_");
+        String priv = x.substring(0, index);
+        String pub = x.substring(index+1, x.length());
+
+        private_key_field.setText(priv);
+        public_key_field.setText(pub);
+
 
         // Delete files if exist
 //        File file = new File("private.key");

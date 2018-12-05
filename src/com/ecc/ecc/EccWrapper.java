@@ -1,3 +1,5 @@
+package com.ecc.ecc;
+
 /**
  * Created by ramiawar on 12/5/18.
  */
@@ -17,7 +19,10 @@ public class EccWrapper {
     public static void main(String[] args) {
 //        System.out.println(System.getProperty("java.library.path"));
         System.out.println(new EccWrapper().generateKeyPair());  // Create an instance and invoke the native method
+    }
 
+    public static String generate(){
+        return new EccWrapper().generateKeyPair();
     }
 
 }
