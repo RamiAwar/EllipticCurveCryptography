@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.librarymanager.ui.output.listMemberController">
+    <children>
+        <TableView fx:id="table_view" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="id_column" prefWidth="56.70593202114105" text="ID" />
+                <TableColumn fx:id="firstname_column" prefWidth="179.29410552978516" text="Firstname" />
+                <TableColumn fx:id="lastname_column" prefWidth="186.44129943847656" text="Lastname" />
+                <TableColumn fx:id="age_column" minWidth="0.0" prefWidth="58.764892578125" text="Age" />
+                <TableColumn fx:id="email_column" prefWidth="369.2351379394531" text="Email" />
+            <TableColumn fx:id="phone_column" minWidth="0.0" prefWidth="217.82421875" text="Phone" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
