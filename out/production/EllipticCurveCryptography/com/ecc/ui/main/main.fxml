@@ -76,7 +76,7 @@
                         </TextField>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button mnemonicParsing="false" text="Encrypt">
+                              <Button fx:id="encrypt_button" mnemonicParsing="false" onAction="#encrypt" text="Encrypt">
                                  <HBox.margin>
                                     <Insets right="10.0" />
                                  </HBox.margin>
@@ -84,7 +84,7 @@
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" text="Decrypt">
+                              <Button fx:id="decrypt_button" mnemonicParsing="false" onAction="#decrypt" text="Decrypt">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>

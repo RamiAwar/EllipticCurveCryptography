@@ -1,5 +1,6 @@
 package com.ecc.ui.main;
 
+import com.ecc.ecc.EccWrapper;
 import com.ecc.ui.draggable.EffectUtilities;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -33,9 +34,6 @@ public class mainController implements Initializable{
     private double yOffset;
     private Stage stage;
 
-    private native int inverse_mod(int k, int n);
-
-
     //Receiving stage from main class to make window draggable
     void registerStage(Stage stage){
         this.stage = stage;
@@ -52,6 +50,8 @@ public class mainController implements Initializable{
 
     @FXML
     void encrypt(ActionEvent e){
+
+        EccWrapper.generate();
 
     }
 
